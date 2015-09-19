@@ -4,7 +4,7 @@ Created on 18 Sep, 2015
 @author: wangyi
 '''
 import unittest
-from PyMatrix.array import *
+from matrix_array.array import *
 
 from utils.parser import Parser
 

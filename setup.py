@@ -16,7 +16,7 @@ CLASSIFIERS = """
 Development Status :: 5 - Production/Stable
 Intended Audience :: Science/Research
 Intended Audience :: Developers
-License :: OSI Approved Licence
+License :: OSI Approved
 Programming Language :: C
 Programming Language :: Python
 Programming Language :: Python :: 3.4
@@ -30,21 +30,21 @@ Operating System :: Unix
 Operating System :: MacOS
 """
 
-from distutils.core import setup
+#from distutils.core import setup
+from setuptools import setup
 
-meta = dict(name='PyMatrix',
-    version='0.1',
+meta = dict(name='matrix_array',
+    version='%s.%s.%s'%(0,1,0),# Major, Minor, Maintenance
     description='N-Dimension Matrix Object Container for ubiquitous purposes',
     long_description=__doc__,
     download_url="https://github.com/yiakwy/PyMatrix3.git",
-    licence="MIT",
+    license="MIT",
     classifiers=[_f for _f in CLASSIFIERS.split('\n') if _f],
     platforms=["Windows", "Linux", "Solaris", "Mac OS-X", "Unix"],
     author='Wang Lei',
-    test_suite="test.test",
     author_email="lwang11@mtu.edu",
     url="www.yiak.co",
-    packages=['PyMatrix', 'utils', 'test'],
+    packages=['matrix_array', 'utils'],
 )
 
 def setup_package():

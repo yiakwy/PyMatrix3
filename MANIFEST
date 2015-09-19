@@ -2,7 +2,6 @@
 setup.py
 PyMatrix/__init__.py
 PyMatrix/array.py
-test/__init__.py
 test/test.py
 utils/__init__.py
 utils/parser.py
